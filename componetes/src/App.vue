@@ -3,16 +3,18 @@
     <!-- 
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     -->
+    <monedas/>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-
+import monedas from './components/monedas.vue'
 export default {
   name: 'App',
   components: {
   //  HelloWorld
+  monedas
   }
 }
 </script>

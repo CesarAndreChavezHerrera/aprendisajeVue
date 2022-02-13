@@ -160,7 +160,7 @@
 
 				
 				<button class="btn btn-primary m-2"
-						onclick="clearVal()">
+						v-on:click = "resetear">
 				Resetear
 			</button>
 			</div>
@@ -211,7 +211,13 @@ export default {
             },
             test_:function(){
                 alert("test")
-            }           
+            }  ,
+			resetear:function(){
+				this.texto_entrada = ""
+
+
+
+			}         
         }
 
 }
