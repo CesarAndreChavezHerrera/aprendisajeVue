@@ -5,6 +5,7 @@
     -->
     <monedas/>
     <masa/>
+    <longitud/>
   </div>
 </template>
 
@@ -12,12 +13,16 @@
 //import HelloWorld from './components/HelloWorld.vue'
 import monedas from './components/monedas.vue'
 import Masa from './components/Masa.vue'
+import longitud from './components/longitud.vue'
+
 export default {
   name: 'App',
   components: {
   //  HelloWorld
   monedas,
-  Masa
+  Masa,
+  longitud,
+  
   }
 }
 </script>
