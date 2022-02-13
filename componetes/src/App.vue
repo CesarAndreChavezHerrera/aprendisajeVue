@@ -4,17 +4,20 @@
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     -->
     <monedas/>
+    <masa/>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 import monedas from './components/monedas.vue'
+import Masa from './components/Masa.vue'
 export default {
   name: 'App',
   components: {
   //  HelloWorld
-  monedas
+  monedas,
+  Masa
   }
 }
 </script>
