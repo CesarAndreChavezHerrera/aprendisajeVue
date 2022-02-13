@@ -1,7 +1,16 @@
 <template>
     <div>
         <h1>Conversor de masa</h1>
-        <input type="text" v-model ="entrada_numero" >
+
+        <div class="form-group">
+				<label for="oamount">
+					Cantidad a Convertir:
+				</label>
+				<input type="text" v-model="entrada_numero"
+					class="form-control searchBox"
+					id="oamount" 
+                >
+			</div>
         <div>
             <span>De:</span>
         </div>
@@ -24,7 +33,7 @@
         </select>
         <br>
         <button v-on:click="calcular">calcular</button>
-        <h2>resultado:{{salida}}</h2>
+        <h2>Resultado:{{salida}}</h2>
     </div>
 </template>
 <script>
