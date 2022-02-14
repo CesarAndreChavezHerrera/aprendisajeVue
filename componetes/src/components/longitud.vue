@@ -1,11 +1,30 @@
 <template>
-    <div>
-        <h1>Convetidor de logitud</h1>
+    <div class="nuevoB">
+        <h1>Convetidor de longitud</h1>
         <input type="text" v-model ="entrada_numero" >
+        <div >
+            <span>De:</span>
+        </div>
+        <select v-model="fromRate" class= nuevo2>
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+            <option value="dam">dam</option>
+            <option value="hm">hm</option>
+            <option value="km">km</option>
+            <option value="ft">ft</option>
+            <option value="in">in</option>
+            <option value="yd">in</option>
+            <option value="nmi">nmi</option>
+        </select>
+
+
+        <br>
         <div>
             <span>Hacia:</span>
         </div>
-        <select v-model="fromRate">
+        <select v-model="toRate" class = nuevo3>
             <option value="mm">mm</option>
             <option value="cm">cm</option>
             <option value="dm">dm</option>
@@ -19,24 +38,7 @@
             <option value="nmi">nmi</option>
         </select>
         <br>
-        <div>
-            <span>Hacia:</span>
-        </div>
-        <select v-model="toRate">
-            <option value="mm">mm</option>
-            <option value="cm">cm</option>
-            <option value="dm">dm</option>
-            <option value="m">m</option>
-            <option value="dam">dam</option>
-            <option value="hm">hm</option>
-            <option value="km">km</option>
-            <option value="ft">ft</option>
-            <option value="in">in</option>
-            <option value="yd">in</option>
-            <option value="nmi">nmi</option>
-        </select>
-        <br>
-        <button v-on:click="calcular">calcular</button>
+        <button v-on:click="calcular" class = .p>calcular</button>
         <h2>resultado:{{salida}}</h2>
     </div>
 </template>
@@ -60,4 +62,44 @@ export default({
             }
         }
 })
+
+
+
+
 </script>
+
+<style>
+.nuevoB {
+	background-color: aliceblue;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.nuevo2 {
+	width: 50vw;
+	margin: auto;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: rgba(0, 238, 255, 0.472);
+	color: rgb(0, 0, 0);
+}
+
+.nuevo3 {
+	width: 50vw;
+	margin: auto;
+	padding: 15px;
+	border-radius: 5px;
+	background-color: rgba(0, 255, 157, 0.472);
+	color: rgb(0, 0, 0);
+}
+
+.p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+
+</style>
