@@ -1,17 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- 
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    -->
+    <monedas/>
+    <masa/>
+    <longitud/>
+    <tiempo/>
+    <almacenamiento/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import monedas from './components/monedas.vue'
+import Masa from './components/Masa.vue'
+import longitud from './components/longitud.vue'
+import tiempo from "./components/tiempo.vue"
+import almacenamiento from "./components/almacenamiento.vue"
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+  //  HelloWorld
+  monedas,
+  Masa,
+  longitud,
+  tiempo,  
+  almacenamiento,
+
+
   }
 }
 </script>
