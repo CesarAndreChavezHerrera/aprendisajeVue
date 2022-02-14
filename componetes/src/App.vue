@@ -6,6 +6,7 @@
     <monedas/>
     <masa/>
     <longitud/>
+    <tiempo/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@
 import monedas from './components/monedas.vue'
 import Masa from './components/Masa.vue'
 import longitud from './components/longitud.vue'
+import tiempo from "./components/tiempo.vue"
 
 export default {
   name: 'App',
@@ -22,7 +24,7 @@ export default {
   monedas,
   Masa,
   longitud,
-  
+  tiempo,  
   }
 }
 </script>
