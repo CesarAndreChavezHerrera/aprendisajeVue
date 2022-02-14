@@ -1,6 +1,7 @@
 <template>
-    <div>
+    <div class="bodyy">
         <h1>Convetidor de almacenamiento</h1>
+      <div class="mainn">  
         <input type="text" v-model ="entrada_numero" >
         <div>
             <span>de:</span>
@@ -30,8 +31,9 @@
         </select>
         <br>
         <button v-on:click="calcular">calcular</button>
-        <h2>resultado:{{salida}}</h2>
-    </div>
+     </div>
+        <h2>Resultado:{{salida}}</h2>
+      </div>
 </template>
 
 <script>
@@ -63,3 +65,23 @@ export default({
 })
 
 </script>
+<style>
+.bodyy {
+    background-color: rgb(211, 233, 230);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.mainn {
+    width: 50vw;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(0, 17, 255, 0.472);
+    color: rgb(0, 0, 0);
+}
+#Resultado h1 {
+    font-size: 40px;
+}
+</style>
